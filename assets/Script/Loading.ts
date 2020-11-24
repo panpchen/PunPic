@@ -1,3 +1,5 @@
+import { Constants } from "./Config/Constants";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -11,8 +13,10 @@ export default class Loading extends cc.Component {
         const manager = cc.director.getCollisionManager();
         manager.enabled = true;
         this.preloadGameScene();
-        // manager.enabledDebugDraw = true;
 
+        Constants.storeParmForAssessStatistics();
+
+        // manager.enabledDebugDraw = true;
         // cc.director.getPhysicsManager().enabled = true;
     }
 

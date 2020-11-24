@@ -8,11 +8,17 @@
 import BaseUI from "./BaseUI";
 import { UIManager, UIType } from "../UIManager";
 import Game from "../Game";
+import { SendMsg } from "../Net/SendMsg";
+import { Constants } from "../Config/Constants";
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class ResultUI extends BaseUI {
+
+    init() {
+        SendMsg.reqSaveAssessStatistics(Constants.AssessStatisticsJson);
+    }
 
     clickBackGame() {
         this.hide();
