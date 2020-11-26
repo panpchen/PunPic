@@ -13,14 +13,15 @@ const { ccclass, property } = cc._decorator;
 export default class DecryptPopUI extends BaseUI {
     @property(cc.Label)
     label: cc.Label = null;
-    @property(cc.SpriteAtlas)
-    atlas: cc.SpriteAtlas = null;
-    @property(cc.Sprite)
-    sp: cc.Sprite = null;
+    @property(cc.Animation)
+    aniList: cc.Animation[] = [];
 
     init(itemData) {
         this.label.string = itemData.descripe;
-        this.sp.spriteFrame = this.atlas.getSpriteFrame(itemData.id);
-        this.sp.node.scale = itemData.smallSize;
+        this.aniList.forEach((ani, index) => {
+            ani.node.active = index == itemData.id;
+            ani.stop();
+            ani.play();
+        });
     }
 }

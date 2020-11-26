@@ -1,0 +1,59 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "decrypt1_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4.833333333333333,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "bg": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -482.119
+            },
+            {
+              "frame": 1,
+              "value": -66.46
+            },
+            {
+              "frame": 1.6,
+              "value": -66.46
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": -482.119
+            }
+          ]
+        }
+      },
+      "bg2": {
+        "props": {
+          "x": [
+            {
+              "frame": 2.7,
+              "value": 528.139
+            },
+            {
+              "frame": 3.7,
+              "value": 74.784
+            },
+            {
+              "frame": 4.233333333333333,
+              "value": 74.784
+            },
+            {
+              "frame": 4.833333333333333,
+              "value": 528.139
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

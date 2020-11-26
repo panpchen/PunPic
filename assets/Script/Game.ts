@@ -109,7 +109,7 @@ export default class Game extends cc.Component {
         } else {
             this._curItemId++;
             cc.tween(this.itemBg.node)
-                .to(0.2, { position: cc.v3(0, 1000) })
+                .to(0.2, { position: cc.v3(0, -300) })
                 .call(() => {
                     this.updateContent();
                     this.flipContent.scale = 1;
