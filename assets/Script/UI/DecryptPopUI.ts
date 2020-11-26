@@ -20,8 +20,10 @@ export default class DecryptPopUI extends BaseUI {
         this.label.string = itemData.descripe;
         this.aniList.forEach((ani, index) => {
             ani.node.active = index == itemData.id;
-            ani.stop();
-            ani.play();
+            if (ani.node.active) {
+                ani.stop();
+                ani.play();
+            }
         });
     }
 }
