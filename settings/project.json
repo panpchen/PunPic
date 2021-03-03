@@ -75,5 +75,8 @@
     }
   },
   "preview-port": 7456,
-  "start-scene": "50fc6569-d05b-429a-915e-53e01505259f"
+  "start-scene": "50fc6569-d05b-429a-915e-53e01505259f",
+  "migrate-history": [
+    "cloud-function"
+  ]
 }

@@ -180,7 +180,7 @@
       "array": [
         0,
         0,
-        388.845406299213,
+        258.0755703277627,
         0,
         0,
         0,
@@ -211,7 +211,7 @@
       "__id__": 3
     },
     "_enabled": true,
-    "_cullingMask": 3,
+    "_cullingMask": 4294967295,
     "_clearFlags": 7,
     "_backgroundColor": {
       "__type__": "cc.Color",
